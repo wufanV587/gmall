@@ -1,0 +1,35 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.230.188:3306/guli_pms?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+  redis:
+    host: 192.168.230.188
+
+  rabbitmq:
+    host: 192.168.230.188
+    username: laowang
+    password: 123456
+    virtual-host: /laowang
+    template:
+       exchange: gmall.item.exchange
+    publisher-confirms: true
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/pms/*.xml  # 读取映射文件
+  global-config:
+    db-config:
+      id-type: auto
+logging:
+  level:
+    com.atguigu: debug
+
+
+

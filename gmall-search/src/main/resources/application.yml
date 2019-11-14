@@ -1,0 +1,19 @@
+server:
+  port: 8086
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  elasticsearch:
+    jest:
+      uris: http://192.168.230.188:9200
+  rabbitmq:
+    host: 192.168.230.188
+    username: laowang
+    password: 123456
+    virtual-host: /laowang
+    template:
+       exchange: gmall.item.exchange
+    publisher-confirms: true
+

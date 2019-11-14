@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: item-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 54c26639-32fc-44d0-8aec-0be61c234aa6
+        group: dev
+        file-extension: yml  # 默认找服务名.properties文件

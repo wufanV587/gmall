@@ -1,0 +1,18 @@
+server:
+  port: 8089
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+ # redis:
+ #   host: 192.168.230.188
+
+auth:
+  jwt:
+    publicKeyPath: D:\\project-0615\\tem\\rsa.pub
+    privateKeyPath: D:\\project-0615\\tem\\rsa.pri
+    expire: 180 #单位是分钟
+    cookieName: GMALL_TOKEN
+    secret: kfaslk9078aaagh9878haasd,.9809sdag3g
+
